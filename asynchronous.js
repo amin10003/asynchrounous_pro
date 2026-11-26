@@ -3,7 +3,7 @@
 // console.log("Task two")
 // console.log("Task three")
 // console.log("Task four")
-// console.log("Task five") 
+// console.log("Task five")
 
 //asynchronous
 //before you run the code ask the students , the order of how this code will  run
@@ -13,7 +13,6 @@
 // },3000)
 
 // console.log("end")
-
 
 // //callback function
 // function fetchData(callback) {
@@ -41,34 +40,35 @@
 //2nd Example: Ordering Food
 
 function orderingFood() {
-    console.log("Ordered fast Food")
+  console.log("Ordered fast Food");
 }
 
 function proceesingFood(callback) {
-    setTimeout(() => {
-        console.log("Food is in process")
-        callback()
-    },3000)
+  setTimeout(() => {
+    console.log("Food is in process");
+    callback();
+  }, 3000);
 }
 
 function waitFood() {
-//     setTimeout(() => {
-      
-    //    }, 5000)
-      console.log("waiting Food")
-        
-       
+  //     setTimeout(() => {
+
+  //    }, 5000)
+  console.log("waiting Food");
 }
 
 function eatFood() {
-    setTimeout(() => {
-        console.log("Eating Food")
-    }, 5000
-    )
+  setTimeout(() => {
+    console.log("Eating Food");
+  }, 5000);
 }
 
-orderingFood()
-proceesingFood(waitFood)
-eatFood()
+orderingFood();
+proceesingFood(waitFood);
+eatFood();
 
+//arrow function
 
+proceesingFood(() => {
+  console.log("waiting Food");
+});
